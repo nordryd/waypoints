@@ -1,0 +1,19 @@
+name: Waypoints
+main: com.nordryd.spigot.waypoints
+version: 1.0
+api-version: 1.15
+commands:
+  waypoints:
+    description: Base for all waypoints commands
+    permission: wp.user
+  wp:
+    description: Alias for base command
+    permission: wp.user
+permissions:
+  wp.admin:
+    description: Gives access to all commands.
+    default: op
+    children:
+      marena.user: true
+  wp.user:
+    description: Gives access to commands that do not enable grieving.
